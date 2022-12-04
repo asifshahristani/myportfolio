@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/pro-light-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/pro-light-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
-import { AppWrap, MotionWrap } from '../../wrapper';
-import './Footer.scss';
-import { faMugMarshmallows } from '@fortawesome/pro-duotone-svg-icons';
+import { AppWrap, MotionWrap } from "../../wrapper";
+import "./Footer.scss";
+import { faMugMarshmallows } from "@fortawesome/pro-duotone-svg-icons";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
   const [loading, setLoading] = useState(false);
-  const [state, handleSubmit] = useForm('xqkjlkjw');
+  const [state, handleSubmit] = useForm("xqkjlkjw");
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -28,82 +28,82 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className='head-text'>
+      <h2 className="head-text">
         Take a
         <FontAwesomeIcon
           icon={faMugMarshmallows}
-          color='#594242'
+          color="#594242"
           style={{
-            fontSize: '40px',
-            paddingBottom: '3px',
-            marginLeft: '15px',
-            marginRight: '15px',
+            fontSize: "40px",
+            paddingBottom: "3px",
+            marginLeft: "15px",
+            marginRight: "15px",
           }}
         />
         & chat with me
       </h2>
-      <div className='app__footer-cards'>
-        <div className='app__footer-card '>
+      <div className="app__footer-cards">
+        <div className="app__footer-card ">
           {/* <img src={images.email3d} alt="email" /> */}
-          <div style={{ marginRight: '10px' }}>
+          <div style={{ marginRight: "10px" }}>
             <FontAwesomeIcon
               icon={faEnvelope}
-              color='#213547'
-              style={{ fontSize: '25px' }}
+              color="#213547"
+              style={{ fontSize: "25px" }}
             />
           </div>
-          <a href='aminullah.developer@gmail.com' className='p-text'>
+          <a href="omid@email.com" className="p-text">
             aminullah.developer@gmail.com
           </a>
         </div>
-        <div className='app__footer-card'>
-          <div style={{ marginRight: '10px' }}>
+        <div className="app__footer-card">
+          <div style={{ marginRight: "10px" }}>
             <FontAwesomeIcon
               icon={faWhatsapp}
-              color='#213547'
-              style={{ fontSize: '25px' }}
+              color="#213547"
+              style={{ fontSize: "25px" }}
             />
           </div>
-          <a href='tel:+92 309 2720767' className='p-text'>
-            +92 309 27 20 767
+          <a href="tel:+123123123123" className="p-text">
+            +1 123 12 12 123
           </a>
         </div>
       </div>
       {!state.succeeded ? (
-        <form onSubmit={handleSubmit} className='app__footer-form app__flex'>
-          <div className='app__flex'>
+        <form onSubmit={handleSubmit} className="app__footer-form app__flex">
+          <div className="app__flex">
             <input
-              className='p-text'
-              type='text'
-              placeholder='Your Name'
-              name='username'
-              id='username'
+              className="p-text"
+              type="text"
+              placeholder="Your Name"
+              name="username"
+              id="username"
             />
           </div>
-          <div className='app__flex'>
+          <div className="app__flex">
             <input
-              className='p-text'
-              type='email'
-              placeholder='Your Email'
-              name='email'
-              id='email'
+              className="p-text"
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              id="email"
             />
           </div>
           <div>
             <textarea
-              className='p-text'
-              placeholder='Your Message'
-              name='message'
-              id='message'
+              className="p-text"
+              placeholder="Your Message"
+              name="message"
+              id="message"
             />
           </div>
-          <button className='p-text' type='submit' disabled={state.submitting}>
-            {!loading ? 'Send Message' : 'Sending...'}
+          <button className="p-text" type="submit" disabled={state.submitting}>
+            {!loading ? "Send Message" : "Sending..."}
           </button>
         </form>
       ) : (
         <div>
-          <h3 className='head-text'>Thank you for getting in touch!</h3>
+          <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
       )}
     </>
@@ -111,7 +111,7 @@ const Footer = () => {
 };
 
 export default AppWrap(
-  MotionWrap(Footer, 'app__footer'),
-  'contact',
-  'app__whitebg'
+  MotionWrap(Footer, "app__footer"),
+  "contact",
+  "app__whitebg"
 );
