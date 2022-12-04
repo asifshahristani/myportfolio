@@ -23,7 +23,7 @@ export const experiences = [
     year: "2020",
     works: [
       {
-        name: "Full Stack Web Developer",
+        name: "Frontend Web Developer",
         company: "Plancv LLC (www.plancv.com)",
         desc: "",
       },

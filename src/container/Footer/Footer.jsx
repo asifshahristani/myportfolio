@@ -55,8 +55,8 @@ const Footer = () => {
               style={{ fontSize: "25px" }}
             />
           </div>
-          <a href="omid@email.com" className="p-text">
-            aminullah.developer@gmail.com
+          <a href="mailto:omid.nizami.developer@gmail.com" className="p-text">
+            omid.nizami.developer@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
@@ -67,8 +67,8 @@ const Footer = () => {
               style={{ fontSize: "25px" }}
             />
           </div>
-          <a href="tel:+123123123123" className="p-text">
-            +1 123 12 12 123
+          <a href="tel:+1(484)2989279" className="p-text">
+            +1 (484) 298-9279
           </a>
         </div>
       </div>
