@@ -9,7 +9,7 @@ import {
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <a href="https://github.com/" target="_blank">
+      <a href="https://github.com/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon
           icon={faGithub}
           color="#333"
@@ -18,7 +18,7 @@ const SocialMedia = () => (
       </a>
     </div>
     <div>
-      <a href="https://www.linkedin.com/in/" target="_blank">
+      <a href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon
           icon={faLinkedin}
           color="#333"
@@ -27,7 +27,7 @@ const SocialMedia = () => (
       </a>
     </div>
     <div>
-      <a href="https://angel.co/u/" target="_blank">
+      <a href="https://angel.co/u/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon
           icon={faAngellist}
           color="#333"

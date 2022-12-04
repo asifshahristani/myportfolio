@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import {
+  useForm,
+  // ValidationError
+} from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/pro-light-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -9,18 +12,18 @@ import "./Footer.scss";
 import { faMugMarshmallows } from "@fortawesome/pro-duotone-svg-icons";
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  const [loading] = useState(false);
   const [state, handleSubmit] = useForm("xqkjlkjw");
 
-  const handleChangeInput = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // const handleChangeInput = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
   // const handleSubmit = () => {
   //   setLoading(true);
