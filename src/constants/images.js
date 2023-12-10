@@ -53,9 +53,15 @@ import googlemap from "../assets/googlemap.png";
 import dropbox from "../assets/dropbox.png";
 import puppeteer from "../assets/puppeteer.png";
 import tailwind from "../assets/tailwind.png";
+import java from "../assets/java.png";
+import MySQL from "../assets/MySQL1.png";
+import agile from "../assets/agile.png";
 
 // badges - work badges --------------------------
 const images = {
+  agile,
+  MySQL,
+  java,
   tailwind,
   puppeteer,
   googlemap,
