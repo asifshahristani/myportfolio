@@ -9,7 +9,11 @@ import {
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <a href="https://github.com/" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/asifshahristani"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon
           icon={faGithub}
           color="#333"
@@ -18,7 +22,11 @@ const SocialMedia = () => (
       </a>
     </div>
     <div>
-      <a href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer">
+      <a
+        href="https://www.linkedin.com/in/asif-shahristani-0a10a81a7/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FontAwesomeIcon
           icon={faLinkedin}
           color="#333"
