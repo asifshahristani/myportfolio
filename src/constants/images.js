@@ -26,7 +26,7 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import profile from "../assets/profile.png";
-import profile_alt from "../assets/omid_pic.jpg";
+// import profile_alt from "../assets/omid_pic.jpg";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
@@ -95,7 +95,7 @@ const images = {
   about03,
   about04,
   profile,
-  profile_alt,
+  // profile_alt,
   circle,
   logo,
   adidas,

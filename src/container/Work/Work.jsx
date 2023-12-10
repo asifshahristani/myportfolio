@@ -55,6 +55,7 @@ const Work = () => {
     },
     {
       imgUrl: images.porto,
+      // imgUrl: images.school,
       name: "My Personal Portfolio",
       projectLink: "https://amin.plancv.com/",
       title: "Personal Portfolio",
